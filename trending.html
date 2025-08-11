@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/662d45b52e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Trending Now</title>
+</head>
+<body>
+
+     <!---------------------Navbar--------------------->
+
+  <header class="font-roboto bg-white shadow-sm w-full h-[115px]">
+    <nav class="grid container h-full grid-rows-2">
+
+      <!-- Top Row -->
+      <section class="grid grid-cols-[auto_32%_1fr] ">
+
+        <!-- Logo -->
+        <div class="grid justify-center">
+          <a href="index.html">
+            <img class="h-27 mt-1" src="./photos/McDonalds_Logo.png">
+          </a>
+        </div>
+
+        <!-- Careers / Contact -->
+        <div class="grid h-[45%] justify-start items-end ">
+          <ul class="grid grid-cols-2  gap-x-4 text-md">
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Search / Locate / Order -->
+        <div class="h-[49%] flex items-end justify-end ">
+          <ul class="flex items-center gap-6 ">
+            <li>
+              <a href="search.html" class="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#666666">
+                  <path
+                    d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                </svg>
+                Search
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="flex items-center gap-1">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                  fill="#BB271A">
+                  <path
+                    d="M480-477.61q34.2 0 58.29-24.1 24.1-24.09 24.1-58.29t-24.1-58.29q-24.09-24.1-58.29-24.1t-58.29 24.1q-24.1 24.09-24.1 58.29t24.1 58.29q24.09 24.1 58.29 24.1Zm0 285.15q120.33-110.08 178.73-198.59 58.4-88.52 58.4-161.91 0-107.31-68.67-175.74t-168.47-68.43q-99.79 0-168.46 68.43-68.66 68.43-68.66 175.74 0 73.39 58.4 161.79 58.4 88.39 178.73 198.71Zm0 120.59Q315.17-211.26 233.52-329.36q-81.65-118.1-81.65-223.6 0-153.28 98.95-244.22 98.95-90.95 229.18-90.95 130.23 0 229.18 90.95 98.95 90.94 98.95 244.22 0 105.5-81.65 223.6T480-71.87ZM480-560Z" />
+                </svg>
+                Locate Us
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="flex bg-amber-400 justify-center rounded-sm w-[180px] h-10 space-x-2 items-center">
+                <h2 class="text-sm">Order on McDelivery</h2>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </section>
+
+      <!-- Bottom Row -->
+      <section>
+        <nav>
+          <ul class="grid grid-flow-col auto-cols-max gap-x-4 pl-25 mt-5  ">
+            <li class="menu-item text-lg hover:border-b-4 border-red-700">
+              <a href="#" class="flex items-center gap-x-2 px-2 py-1 group">
+                <h2 id="our-menu" class="flex items-center gap-x-1">
+                  Our Menu
+                  <i
+                    class="text-[12px] fa-solid fa-chevron-down group-hover:rotate-180"></i>
+                </h2>
+              </a>
+
+            </li>
+            <li class="menu-item text-lg hover:border-b-4 border-red-700 px-2 py-1"><a href="about-food.html"><span>About Our
+                  Food</span></a></li>
+            <li class="menu-item text-lg hover:border-b-4 border-red-700 px-2 py-1"><a href="right-to-know.html"><span>Your Right To
+                  Know</span></a></li>
+            <li class="menu-item text-lg hover:border-b-4 border-red-700 px-2 py-1"><a href="our-app.html"><span>Our App</span></a>
+            </li>
+            <li class="menu-item text-lg hover:border-b-4 border-red-700 px-2 py-1"><a href="Family.html"><span>Family</span></a>
+            </li>
+            <li class="menu-item text-lg hover:border-b-4 border-red-700 px-2 py-1"><a href="trending.html"><span>Trending
+                  Now</span></a></li>
+            <li class="menu-item text-lg hover:border-b-4 border-red-700 px-2 py-1"><a href="#"><span>Rounding
+                  Up</span></a></li>
+          </ul>
+        </nav>
+      </section>
+
+    </nav>
+  </header>
+              <!---------------------Heading--------------------->
+
+   <section class=" mt-10 flex items-center justify-center">
+    <h2 class="text-[56px] text-red-600 font-bold">Trending Now</h2>
+  </section>
+
+
+        <!-- ---------------Trending Cards--------------------- -->
+
+       <section class="container  mt-20 grid grid-cols-3 gap-y-4 gap-x-10 ">
+
+    <div class="trend-cards grid  rounded shadow-lg">
+      <img class="rounded-t  w-full " src="./photos/Our Trending Page/Grimace-574x249-1.png" alt="">
+      <h2 class="text-3xl font-bold text-center  text-red-600">Grimace Shake Has Landed!</h2>
+      <p class="px-9 text-center text-md">Grimace Shake has officially landed at McDonald’s Pakistan — and it’s already trending! Available for a limited time only, so don’t miss your chance to try it.</p>
+      <a href="#" class="text-center"><span class="bg-yellow-400 text-sm text-stone-900 py-3 px-7 rounded">Order
+          Now</span></a>
+    </div>
+    <div class="trend-cards grid  rounded shadow-lg">
+      <img class="rounded-t w-full object-cover" src="./photos/Our Trending Page/happy-meal-readers-thumb.png" alt="">
+      <h2 class="text-3xl font-bold  text-center  text-red-600">Share the Joy of Reading  Together!</h2>
+      <p class="px-5 text-center text-md">Get an inspiring book with your Happy Meal read through fun adventures, and bring the story to life with your family.</p>
+      <a href="#" class="text-center"><span class="bg-yellow-400 text-sm text-stone-900 py-3 px-7 rounded">Learn More</span></a>
+    </div>
+    <div class="trend-cards grid  rounded shadow-lg">
+      <img class="rounded-t w-full object-cover" src="./photos/Our Trending Page/Happy-Menu.png" alt="">
+      <h2 class="text-3xl font-bold text-center  text-red-600">Happiness Is On The Menu!McCafé</h2>
+      <p class="px-4 text-center text-md">The Happy Menu is back with all your favorites! Don't wait - order yours today!</p>
+      <a href="#" class="text-center"><span class="bg-yellow-400 text-sm text-stone-900 py-3 px-7 rounded">Order
+          Now</span></a>
+    </div>
+    <div class="trend-cards grid  rounded shadow-lg">
+      <img class="rounded-t w-full object-cover" src="./photos/Our Trending Page/GCS.png" alt="">
+      <h2 class="text-3xl font-bold text-center  text-red-600">Grand Chicken Special!</h2>
+      <p class="px-4 text-center text-md">A deliciously juicy thick chicken patty topped with a chicken roll, handful of shredded crispy lettuce, juicy tomato, double Emmental cheese, and gourmet Dijon mustard sauce all held toghether by a corn-dusted bun.
+</p>
+      <a href="#" class="text-center"><span class="bg-yellow-400 text-sm text-stone-900 py-3 px-7 rounded">Order
+          Now</span></a>
+    </div>
+    <div class="trend-cards grid  rounded shadow-lg">
+      <img class="rounded-t w-full object-cover" src="./photos/Our Trending Page/Rounding-Up-25.png" alt="">
+      <h2 class="text-3xl font-bold text-center  text-red-600">Khul Kay Khulla Do!</h2>
+      <p class="px-2 mb-18 text-center  text-md">Round up your bill at McDonald's & help bring clean water to those in need. Every drop counts!</p>
+      <a href="https://www.mcdonaldsapps.com/en-GB/" class="text-center"><span class="bg-yellow-400 text-sm text-stone-900 py-3 px-7 rounded">Contribute
+          Now</span></a>
+    </div>
+    <div class="trend-cards grid  rounded shadow-lg">
+      <img class="rounded-t w-full object-cover" src="./photos/Our Trending Page/The-Delicious-Trio-Trending-Now.png" alt="">
+      <h2 class="text-3xl font-bold text-center  text-red-600">The Delicious Trio!</h2>
+      <p class="px-5 mb-10 text-center text-md">Three flavors, one delicious decision! Try the creamy Lotus Biscoff, rich Oreo Fudge, or the classic Oreo McFlurry—only at McDonald’s.</p>
+      <a href="#" class="text-center"><span class="bg-yellow-400 text-sm text-stone-900 py-3 px-7 rounded">Order
+          Now</span></a>
+    </div>
+    <div class="trend-cards grid  rounded shadow-lg">
+      <img class="rounded-t w-full object-cover" src="./photos/Our Trending Page/04-McPops.png" alt="">
+      <h2 class="text-3xl font-bold text-center  text-red-600">Introducing the all-new McPops!</h2>
+      <p class="px-5 text-center text-md">They’re soft, they’re filled, and they’re finally here! Your new go-to snack in Blueberry or Chocolate. Try them now for just Rs. 125 each!</p>
+      <a href="#" class="text-center"><span class="bg-yellow-400 text-sm text-stone-900 py-3 px-7 rounded">Order
+          Now</span></a>
+    </div>
+    <div class="trend-cards grid  rounded shadow-lg">
+      <img class="rounded-t w-full object-cover" src="./photos/Our Trending Page/02-Knowledge-On-The-Go.png" alt="">
+      <h2 class="text-3xl font-bold text-center  text-red-600">Dive into Knowledge on the Go!</h2>
+      <p class="px-5 text-center text-md">Ready to win exciting rewards? Don’t miss your chance — take the Knowledge Platform math quiz on the McDonald’s App now!</p>
+      <a href="#" class="text-center"><span class="bg-yellow-400 text-sm text-stone-900 py-3 px-7 rounded">Order
+          Now</span></a>
+    </div>
+    <div class="trend-cards grid  rounded shadow-lg">
+      <img class="rounded-t w-full object-cover" src="./photos/Our Trending Page/03-Cool-Vibes-Only.png" alt="">
+      <h2 class="text-3xl font-bold text-center  text-red-600">Cool Vibes Only!</h2>
+      <p class="px-2  text-center text-md">Say hello to McCafé’s coolest sips! Whether you're in the mood for a bold Iced Americano, a creamy Iced Latte, a decadent Frappé, or a refreshing Iced Tea – we’ve got your chill mode covered.</p>
+      <a href="#" class="text-center"><span class="bg-yellow-400 text-sm text-stone-900 py-3 px-7 rounded">Order
+          Now</span></a>
+    </div>
+
+  </section>
+
+
+  
+   <!-- ----------------------Footer--------------------- -->
+     
+  <section class="container mt-30  grid grid-cols-4 gap-4">
+    <div class="space-y-3">
+      <h2 class="font-bold"><a href="our-company.html">Our Company</a></h2>
+      <ul class="space-y-1">
+        <li><a href="#">Our Community</a></li>
+        <li><a href="#">Our Journey</a></li>
+        <li><a href="#">Our History</a></li>
+      </ul>
+    </div>
+
+    <div class="space-y-3">
+      <h2 class="font-bold"><a href="careers.html">Careers</a></h2>
+      <ul class="space-y-1">
+        <li><a href="#">Corporate</a></li>
+        <li><a href="#">Restaurant</a></li>
+      </ul>
+    </div>
+
+    <div class="space-y-3">
+      <h2 class="font-bold"><a href="contact.html">Contact Us</a></h2>
+      <ul class="space-y-1">
+        <li><a href="#">Suggestion</a></li>
+        <li><a href="#">Complaint</a></li>
+      </ul>
+    </div>
+
+    <div class="space-y-3">
+      <h2 class="font-bold"><a href="#">News Room</a></h2>
+      <ul class="space-y-1">
+        <li><a href="#">Local</a></li>
+      </ul>
+    </div>
+
+
+
+  </section>
+
+  <!-- -------- Social Media Section-------- -->
+
+  <section class="grid container  mt-15">
+    <!-- Social Icons -->
+    <div class="flex justify-between items-center w-full">
+      <div class="flex gap-3">
+        <a href="#"
+          class="flex justify-center items-center w-10 h-10 rounded-full border border-stone-400 hover:bg-blue-900 hover:text-white">
+          <i class="fa-brands fa-facebook-f"></i>
+        </a>
+        <a href="#"
+          class="flex justify-center items-center w-10 h-10 rounded-full border border-stone-400 hover:bg-stone-900 hover:text-white">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+        <a href="#"
+          class="flex justify-center items-center w-10 h-10 rounded-full border border-stone-400 hover:bg-red-600 hover:text-white">
+          <i class="fa-brands fa-youtube"></i>
+        </a>
+        <a href="#"
+          class="flex justify-center items-center w-10 h-10 rounded-full border border-stone-400 hover:bg-rose-500 hover:text-white">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="#"
+          class="flex justify-center items-center w-10 h-10 rounded-full border border-stone-400 hover:bg-blue-400 hover:text-white">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="#"
+          class="flex justify-center items-center w-10 h-10 rounded-full border border-stone-400 hover:bg-rose-500 hover:text-white">
+          <i class="fa-brands fa-tiktok"></i>
+        </a>
+      </div>
+
+      <!-- App Store Badges -->
+      <div class="flex gap-3 items-center">
+        <a href="#"> <img src="./photos/App Store Badges/app_store_badge.png" alt="" class="h-10 object-contain"></a>
+        <a href="#"><img src="./photos/App Store Badges/google_play_badge.png" alt="" class="h-10 object-contain"></a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="container mt-10 mb-25 grid grid-cols-2  border-t-1 border-stone-300">
+    <div class="mt-10">
+      <ul class="flex gap-4 ">
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms & Conditions</a></li>
+      </ul>
+    </div>
+
+    <div class="grid  mt-10 justify-end">
+
+      <h2 class="flex"><img class="h-5 bg-white pr-2" src="./photos/McDonalds_Logo-mini.png" alt="">©2025 McDonald's.
+        All Rights Reserved.</h2>
+    </div>
+  </footer>
+
+
+</body>
+</html>

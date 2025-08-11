@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+.contain{
+    @apply max-w-[1200px] mx-auto;
+}
+
+
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.menu-item {
+  opacity: 0;
+  transform: translateX(-100%);
+  animation: slideIn 0.6s ease-out forwards;
+}
+
+/* Nav Items - Staggered delays */
+.menu-item:nth-child(1) { animation-delay: 0.1s; }
+.menu-item:nth-child(2) { animation-delay: 0.2s; }
+.menu-item:nth-child(3) { animation-delay: 0.3s; }
+.menu-item:nth-child(4) { animation-delay: 0.4s; }
+.menu-item:nth-child(5) { animation-delay: 0.5s; }
+.menu-item:nth-child(6) { animation-delay: 0.6s; }
+.menu-item:nth-child(7) { animation-delay: 0.7s; }
+
+
+/* ---------------- For Slider Section ----------------- */
+.container{
+  @apply max-w-[1100px] mx-auto;
+}
+
+.slider-wrapper{
+  @apply relative max-w-270 mx-auto
+}
+.slider {
+  @apply flex aspect-[2.333] overflow-x-auto snap-x snap-mandatory scroll-smooth shadow-[0_1.5rem_3rem_-0.75rem_rgba(0,0,0,0.25)];
+  
+  scrollbar-width: none;           /* Firefox */
+  -ms-overflow-style: none;        /* IE and Edge */
+}
+
+.slider::-webkit-scrollbar {
+  display: none;                   /* Chrome, Safari, Opera */
+}
+
+.slider img{
+  @apply flex-[1_0_100%] snap-start ;
+}
+
+
+.slider-nav {
+  @apply flex gap-4 absolute bottom-5 left-1/2 -translate-x-1/2 z-10;
+}
+
+/* ------------ Services Custom CSS -------------- */
+
+.service-cards{
+  @apply  border-1 border-stone-300 w-[355px] h-[445px] ;
+}
+
+/* ------------ Contact Page---------- */
+.contact-cards{
+  @apply  border-1 border-stone-300 w-[555px] h-[400px]  ;
+}
+
+.review-container{
+  @apply max-w-[1150px] mx-auto ;
+}
+
+/* ------------ About Food Page---------- */
+
+.about-food-cards{
+  @apply  border-1 border-stone-300 w-[360px] h-[320px]  ;
+}
+
+
+/* -------------- Our Company---------------- */
+
+
+
+.app-cards{
+  @apply  border-1 border-stone-300 w-[555px] h-[490px]  ;
+}
+
+
+/* ------------- Family Page ------------------ */
+
+.family-cards{
+  @apply  border-1 border-stone-300 w-[555px] h-[440px]  ;
+}
+
+
+
+/* ------------- Trending Now Page ------------------ */
+
+.trend-cards{
+  @apply  border-1 border-stone-300 w-[370px] h-[500px] ;
+}

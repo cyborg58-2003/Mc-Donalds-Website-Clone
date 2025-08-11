@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hover Show Div</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+
+  <div class="group relative inline-block">
+    <!-- First Div (Trigger on Hover) -->
+    <div class="bg-red-500 text-white px-6 py-4 rounded cursor-pointer">
+      Hover over me
+    </div>
+
+    <!-- Second Div (Shown only on Hover) -->
+    <div class="absolute top-full left-0 mt-2 hidden group-hover:block bg-blue-500 text-white px-6 py-4 rounded shadow-lg">
+      I appear when you hover!
+    </div>
+  </div>
+
+</body>
+</html>
+
+
